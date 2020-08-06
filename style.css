@@ -1,0 +1,254 @@
+body {
+    background-color: hsl(240, 78%, 98%);
+    font-family: Montserrat;
+    font-size: 15px;
+    background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: top right, 0 61.5vh;
+    background-size: 22%;
+    width: 100%;
+    height: 96vh;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 27px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: hsl(230, 22%, 74%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px hsl(230, 22%, 74%);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Top Container */
+
+.top_container {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.heading {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: hsl(233, 13%, 49%);
+}
+
+.toggle {
+    color: hsl(234, 14%, 74%);
+}
+
+/* Row Style */
+
+.row {
+    text-align: center;
+}
+
+.inner_l {
+    color: hsl(232, 13%, 33%);
+    background-color: white;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 40px 30px;
+    border-radius: 0.7rem 0 0 0.7rem;
+    box-shadow: -1px 10px 30px 0px rgb(187, 187, 187);
+}
+
+.inner_c {
+    color: white;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    padding: 60px 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 0.7rem;
+}
+
+.inner_r {
+    color: hsl(232, 13%, 33%);
+    background-color: white;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 40px 30px;
+    border-radius: 0 0.7rem 0.7rem 0;
+    box-shadow: 2px 10px 30px 0px rgb(187, 187, 187);
+}
+
+.head {
+    color: hsl(233, 13%, 49%);
+    margin-bottom: 20px;
+}
+
+.price, .price_c {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.storage, .user {
+    color: hsl(233, 13%, 49%);
+    border-top: hsl(234, 14%, 74%) solid 1px;
+    padding: 15px 0px;
+}
+
+.sent_data {
+    color: hsl(233, 13%, 49%);
+    border-top: hsl(234, 14%, 74%) solid 1px;
+    border-bottom: hsl(234, 14%, 74%) solid 1px;
+    padding: 15px 0px;
+}
+
+.more {
+    color: white;
+    padding: 12px 0;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: none;
+    margin-top: 35px;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.more:hover {
+    background-image: linear-gradient(white, white);
+    color: hsl(237, 63%, 64%);
+    border: solid hsl(237, 63%, 64%) 1px;
+}
+
+.head_c {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.storage_c, .user_c {
+    color: white;
+    border-top: hsl(234, 14%, 74%) solid 1px;
+    padding: 15px 0px;
+}
+
+.sent_data_c {
+    color: white;
+    border-top: hsl(234, 14%, 74%) solid 1px;
+    border-bottom: hsl(234, 14%, 74%) solid 1px;
+    padding: 15px 0px;
+}
+
+.more_c {
+    color: hsl(237, 63%, 64%);
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    margin-top: 35px;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.more_c:hover {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: solid white 1px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .inner_l {
+        padding: 40px 30px;
+        border-radius: 0.7rem;
+    }
+    .inner_c {
+        padding: 40px 30px;
+        position: relative;
+        top: 20px;
+        bottom: 0px;
+        border-radius: 0.7rem;
+    }
+    .inner_r {
+        padding: 40px 30px;
+        border-radius: 0.7rem;
+        margin-bottom: 40px;
+        position: relative;
+        top: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .inner_l {
+        padding: 40px 30px;
+        border-radius: 0.7rem;
+    }
+    .inner_c {
+        padding: 40px 30px;
+        position: relative;
+        top: 20px;
+        bottom: 0px;
+        border-radius: 0.7rem;
+    }
+    .inner_r {
+        padding: 40px 30px;
+        border-radius: 0.7rem;
+        margin-bottom: 40px;
+        position: relative;
+        top: 40px;
+    }
+}
